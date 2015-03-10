@@ -18,7 +18,7 @@ for line in content:
     update = splitLine[0]
     url = webService + splitLine[1]
     lang = splitLine[2].upper()
-    outputFile = outputPath + lang + '-' + splitLine[3] + fileExtension
+    outputFile = outputPath + lang + '-' + url.split('/')[-1] + fileExtension
     if update.lower() == 'true':
         response = urllib.request.urlopen(url)
         data = response.read()      # a `bytes` object
