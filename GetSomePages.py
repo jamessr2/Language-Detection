@@ -4,7 +4,8 @@ import urllib2
 
 csvFilename = 'dataSourceWebService.csv'
 userAgentString = 'User-agent', 'Mozilla/5.0'
-wikiPediaRandomPages = [['ENGLISH','http://en.wikipedia.org/wiki/Special:Random'],['SPANISH','http://es.wikipedia.org/wiki/Especial:Aleatoria']]
+wikiPediaRandomPages = [['ENGLISH','http://en.wikipedia.org/wiki/Special:Random'],
+                        ['SPANISH','http://es.wikipedia.org/wiki/Especial:Aleatoria']]
 numPagesToLoad = 2
 
 
@@ -15,7 +16,9 @@ def get_random_page(file, wiki, language):
         opener.addheaders = [(userAgentString)]
         infile = opener.open(wiki)
         url = infile.geturl()[7:]
-        file.write('TRUE,' + url + ',' + language + '\n')
+        #Don't add the url if there is a comma in it, because CSV
+        if not ',' in url:
+            file.write('TRUE,' + url + ',' + language + '\n')
     except Exception:
         print('Error page: ' + wiki + ' lang: ' + language) # Page Failed to open
 
