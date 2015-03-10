@@ -1,2 +1,6 @@
-TRUE,en.wikipedia.org/wiki/HMS_Bellerophon_(1786),English
-TRUE,de.wikipedia.org/wiki/Attentat_von_Sarajevo,German
+FALSE,en.wikipedia.org/wiki/HMS_Bellerophon_(1786),English
+FALSE,de.wikipedia.org/wiki/Attentat_von_Sarajevo,German
+TRUE,en.wikipedia.org/wiki/Frank_the_Baptist,ENGLISH
+TRUE,en.wikipedia.org/wiki/Spiral_Shadow,ENGLISH
+FALSE,es.wikipedia.org/wiki/Hiroshi_Yamashiro,SPANISH
+FALSE,es.wikipedia.org/wiki/Par%C3%A8,SPANISH
