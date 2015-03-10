@@ -15,6 +15,8 @@ def extract_features(paragraph):
         words = split_words(sentence)
         total_words += len(words)
 
+        print len(words), words
+
         for word in words:
             total_chars += len(word)
 
