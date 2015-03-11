@@ -3,9 +3,18 @@
 import sys
 import re
 
+# a useful alphabet detection library I found: https://github.com/EliFinkelshteyn/alphabet-detector
+# supports latin, greek, arabic, hebrew, and cyrillic at least. Possibly more.
+from alphabet_detector import AlphabetDetector # pip install alphabet-detector
+
 
 def extract_features(paragraph):
     features = {}
+
+    alphabets = detect_alphabets(paragraph)
+    alphabet_percentages = calculate_alphabet_percentages(paragraph, alphabets)
+    for alphabet in alphabet_percentages:
+        features["percent_"+str(alphabet).lower()] =alphabet_percentages[alphabet]
 
     sentences = split_sentences(paragraph)
 
@@ -15,7 +24,7 @@ def extract_features(paragraph):
         words = split_words(sentence)
         total_words += len(words)
 
-        print len(words), words
+        # print len(words), words
 
         for word in words:
             total_chars += len(word)
@@ -24,6 +33,29 @@ def extract_features(paragraph):
         features["avg_chars_per_word"] = (total_chars * 1.0) / total_words
 
     return features
+
+def detect_alphabets(paragraph):
+    detector = AlphabetDetector()
+    return detector.detect_alphabet(unicode(paragraph, "UTF-8"))
+
+def calculate_alphabet_percentages(paragraph, alphabets):
+    # TODO - re-work this so that we're not duplicating the code
+    detector = AlphabetDetector()
+    sentences = split_sentences(paragraph)
+    words_in_alphabet = dict.fromkeys(alphabets, 0)
+    total_word_count = 0
+    for sentence in sentences:
+        words = split_words(sentence)
+        # get number of words in each alphabet
+        for word in words:
+            total_word_count += 1
+            for alphabet in alphabets:
+                if detector.only_alphabet_chars(unicode(word, "UTF-8"), alphabet):
+                    words_in_alphabet[alphabet] += 1
+    # convert counts to percentages
+    for alphabet in words_in_alphabet:
+        words_in_alphabet[alphabet] /= float(total_word_count)
+    return words_in_alphabet
 
 
 def split_sentences(paragraph):
@@ -44,9 +76,12 @@ def main():
 
     fname = sys.argv[1]
     with open(fname, "r") as f:
-        paragraph = f.readline().strip()
+        for line in f:
+            paragraph = line.strip()
+            if paragraph:
+                print extract_features(paragraph)
+                print
 
-    print extract_features(paragraph)
 
 
 if __name__ == "__main__":
