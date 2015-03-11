@@ -4,19 +4,20 @@ import codecs
 
 fname = 'dataSourceWebService.csv'
 
-with open(fname) as f:
+with codecs.open(fname, "r", "utf-8") as f:
     content = [line.rstrip('\n') for line in f]
 
 fileExtension = '.txt'
 outputPath = 'data/plaintext/'
 webService = 'http://ec2-54-172-230-29.compute-1.amazonaws.com/?url='
 
-#Each line are in the format "[0,1],[url],[language],[outputFileName]"
+#Each line are in the format "[0,1],[url],[language]"
 for line in content:
+    line = line.rstrip('\r') #Remove carriage returns from manual edits
     splitLine = line.split(',')
     update = splitLine[0]
     url = webService + splitLine[1]
-    lang = splitLine[2].upper()
+    lang = splitLine[2].upper() #remove return character
     outputFile = outputPath + lang + '-' + url.split('/')[-1] + fileExtension
     if update.lower() == 'true':
         response = urllib2.urlopen(url)

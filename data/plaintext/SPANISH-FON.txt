@@ -1,0 +1,107 @@
+SPANISH
+
+
+'FON' es una empresa de Martín Varsavsky surgida en el año 2005 con el objetivo de crear una comunidad WiFi global, que permite a sus usuarios la conexión gratuita a los puntos de acceso de otros usuarios, repartidos por todo el mundo, a la vez que brinda acceso de pago a terceros mediante un sistema en el que las ganancias se reparten entre la compañía y el usuario que presta su conexión.
+Está presente en cada vez más países de Europa, Norteamérica y Asia.
+
+
+
+La compañía ofrece "routers" Wi-Fi (inalámbricos) para que el usuario comparta parte del conexión a Internet. Al mismo tiempo, este usuario obtiene el privilegio de conectarse gratuitamente a los enrutadores WIFI de otros usuarios de la comunidad. Para ello la compañía mantiene una página web actualizada con la posición y estado de todos los puntos de acceso inalámbricos que se encuentran operativos en ese momento, en tiempo real, con la tecnología de Google Maps. 
+
+A cambio de estas facilidades, la compañía cobra a los no usuarios ("Aliens") que quieran conectarse a uno de estos puntos de acceso compartido. La mitad de las ganancias netas se comparten con el propietario del enrutador inalámbrico. La iniciativa pretende extenderse gracias al esfuerzo común entre todos los miembros que se inscriban en la así llamada "comunidad FON" que estén dispuestos a compartir su acceso a Internet mediante WiFi a otros usuarios. 
+
+El precio de los pases FON puede variar según países o campañas asociadas al Punto FON (FON Spot). 
+
+
+Debido al relativo escaso éxito de este modelo de negocio, la compañía ha buscado acuerdos a gran escala con proveedores de acceso a internet en distintos países, ofreciendo sus servicios como una ventaja competitiva para sus socios. Algunos de estos acuerdos (como los alcanzados con BT en Reino Unido) conllevan que la iniciativa FON esté limitada a los clientes del proveedor. Otros acuerdos globales son los alcanzados con Zon en Portugal, o en Rusia con Comstar.
+
+Empresas asociadas a FON: 
+*Belgacom  
+*BT
+*E-Plus-KPN.            
+*MTS  (Mobile TeleSystems)
+*Netia
+*Oi
+*SFR
+*SoftBank
+*ZON Multimédia
+
+
+Existen tres tipos de usuarios: los 'Linus', los 'Bills' y los 'Aliens', si bien con el cambio de política de la compañía, la diferencia entre "linus" y "bill" se ha difuminado bastante. 
+* Los "aliens" son usuarios que no comparten su conexión a internet (porque no tienen conexión de banda ancha o porque todavía no han instalado su enrutador FON) y se conectan a un punto de acceso FON previo pago. 
+* Los usuarios "Linus" comparten su ancho de banda y a cambio obtienen wifi gratis donde haya otro usuario compartiendo su conexión.
+* Los "bill" comparten su ancho de banda y además se quedan con el 50% de los beneficios netos que genere su punto de acceso por las conexiones de Aliens. En un principio esto les inhabilitaba para obtener acceso gratuito en otros puntos FON, pero para promocionar el sistema se ha permitido que los Bill puedan conectarse a otros puntos, por lo que los usuarios Linus quedan como meros altruistas. 
+
+
+Tanto para los 'Altruishtes' como para los 'Bill', el proceso de conexión es el mismo: necesitan un punto de acceso WiFi compatible con FON.  Hasta el 19 de octubre de 2006 eran los enrutadores Linksys WRT54G, WRT54GS/GL y Buffalo AirStation 54g. Quienes tenían uno de ellos podían descargarse e instalar en dicho enrutador un firmware disponible en la web de FON, que convertía el aparato en un punto de acceso FON. Fon empezó regalando el modelo Linksys WRT54GL y luego lo subvencionaba con el compromiso de mantenerlo activo un año con el firmware de FON. Posteriormente, FON ha desarrollado y puesto a la venta sus propios "routers" (enrutadores), a los que llama "Fonera", siendo el modelo original "La Fonera", que sólo ofrece conectividad wifi, y más recientemente, los modelos "la fonera+", que dispone además de un puerto ethernet, la "Fonera 2.0" que añade un puerto USB donde poder conectar discos, impresoras, cámaras, etc. La "Fonera 2.0n" con muchas funcionalidades ampliadas, y la "Fonera SIMPL", que retorna a los orígenes de "la fonera" pero ofreciendo conectividad wifi-n.
+
+
+
+thumb|La fonera.
+El logro de la compañía fue crear un sistema mundial de localización de puntos de acceso inalámbricos, inspirado en las redes locales WIFI, que indica en tiempo real el estado operativo de cada uno, y permite la comunicación entre miembros con un sistema interno de mensajería, a la vez que facilita mediante medios de pago electrónicos el acceso a los no usuarios. (NOTA: Desde hace varios meses [Hoy: 7/mar/2011] todos los puntos de acceso aparecen como activos, desvirtuando la utilidad real de estos mapas.)
+
+En cambio, podrían existir los siguientes problemas: FON no ofrece aún (14/12/2006) una tecnología que permita mantener una conexión entre dos puntos de acceso como ocurre por ejemplo en el caso de la 'redes mesh'. Esto se puede comprobar bajando el 'firmware oficial' de la página de FON (versión modificada de los firmwares libres GPL) y verificando el funcionamiento interno que 'no hace ningún tipo de encaminamiento entre nodos', ni siquiera trata de conectarse mutuamente entre los diferentes puntos de acceso (por ejemplo, WDS o algo similar).'
+
+Sin embargo, el problema más importante al que se enfrenta FON sería el de los aspectos legales. Según la legislación española (y en otros países la situación puede ser similar) se estarían cometiendo varias irregularidades por el aspecto lucrativo del proyecto: redistribución de conexión ('Linus'), incumplimiento de contrato ('Bill'), actuar como operador de telecomunicaciones sin pagar el correspondiente gravamen de la CMT (están registrados en la base de datos de la CMT pero no como proveedor de Internet, sino como "comunidad inalámbrica" de usuarios), etc. Todo esto ha provocado las reticencias de los usuarios más entendidos en este tipo de movimientos o en asuntos legales, que consideran este modelo un fraude o vaporware. Quizás por estas razones la compañía ha ido evolucionando desde una comunidad de "foneros" que compartían su conexión, a una empresa que llega a acuerdos globales con ISP (proveedores de internet).
+
+
+
+En el barrio de inalámbrica se ofrece a través de 200 puntos de acceso WiFi. Gran Vía, Fuencarral, Hortaleza, San Mateo, Fernando VI y Barquillo son algunas de las calles con acceso a la Red en Chueca, un enclave urbano de 75 Hectáreas de superficie y 18.000 habitantes. La cobertura real de este servicio (como de otros wifi) es más difícil de determinar desde el momento que los mapas FON han dejado de ofrecer la información en tiempo real de los puntos de acceso activos.
+
+El proyecto denominado chuecawifi se inició coincidiendo con la celebración del Europride 2007. Se basa en la participación de los vecinos y comerciantes de la zona, que con esta acción se han sumado a la '"Comunidad FON"'. Este movimiento tiene ya en España 50.000 usuarios suscritos.
+
+Actualmente también se está foneando el [http://www.fonlalatina.com barrio de La Latina], el [http://www.moncloawifi.fon.com barrio de Moncloa], y el [http://triball.fon.com/ barrio de Triball].
+
+BT FON ofrece servicio en España.
+
+
+El consejero delegado de la compañía (de origen argentino) ha afirmado en su bitácora que encuentra problemas de corrupción en América Latina que impiden comercializar FON en esa parte del continente. No obstante, desde noviembre del 2006 ofrece a los latinoamericanos que pasen por sus oficinas centrales en Madrid la oportunidad de recoger una Fonera gratuita e instalarla en sus países de origen.
+
+
+Algunos críticos postulan que el modelo de negocio de FON como tal no es verdaderamente ejecutable: según ellos, para que FON funcione necesitaría una participación enorme de usuarios, y por otra parte, aunque así fuera, la cobertura ofrecida desde domicilios particulares sería muy irregular, no siempre de calidad y en su mayor parte formada por usuarios con una fonera, por lo que difícilmente habría suficientes "Aliens" dispuestos a pagar para crear un negocio rentable y sostenible. Sospechan entonces que el modelo de negocio real es convertirse en instrumento revendedor de accesos a internet de las operadoras regulares, con el gancho del posible roaming (posibilidad de disfrutar de conexión) en cualquier sitio.
+
+Estas ambigüedades crean críticas a FON por parte de los defensores de la neutralidad de la red por su falta de ética. Esgrimen varias razones:
+
+* por recurrir con exceso a la especulación e intentar crear una "burbuja" vaporware;
+* un engaño publicitario al vender una expectativa lejos de poder realizarse y por intentar presentarse como altruista, de esta forma conseguir adhesiones de los usuarios que son quienes entregan la red, cuando que en realidad sería un objetivo empresarial;
+* pretender construir un operador "parásito" porque sólo opera donde ya existe conexión.
+
+Algunos usuarios propusieron la creación de un nuevo tipo de usuario, los Angeles, más en consonancia con la filosofía libre de las comunidades inalámbricas y más orientado a un acceso libre a la red interna, sin necesidad de proporcionar salida a Internet. A pesar de la gran acogida que tuvo esta iniciativa entre los usuarios de FON (hasta el punto de realizarse sitios externos a este proyecto), su notificación fue borrada argumentando "correo no deseado". Para algunos esto demostró la actitud mercantilista y de negocio de FON en contraposición a las comunidades inalámbricas libres.
+
+
+
+En febrero del 2006, Skype, Google, eBay, Index Ventures, Sequoia Capital, Excite y Digital Garage, entre otros, deciden invertir 18 millones de euros en el proyecto FON. Además, Sequoia Capital, el primer inversionista de riesgo de Google, se convierte en miembro del consejo de FON.
+
+
+* 'Warchalking'
+* GPRS
+* UMTS
+* LMDS y WiMAX
+* WRT54G
+* HSDPA
+* HSUPA High-Speed Uplink Packet Access
+* [http://www.compartirwifi.com Compartirwifi]
+
+
+* guifi.net
+* RedLibre
+* Wifree
+* Whisher
+
+
+
+
+
+* [http://www.fon.es Sitio web de FON]
+** [http://wiki.fon.com/wiki/Main_Page/es FON Wiki]
+* [http://www.visuarios.com/controller.php?p_action=view_detail&video_id=EVU2D1J6L2 VideoTutorial detallado sobre cómo instalar el router de Fon]
+* [http://maps.fon.com/index.php?lang=es Mapa de cobertura de la red FON]
+* [http://tech.am/2006/09/25/the-real-fon-statistics-%e2%80%93-lies-manipulation-or-fantasy/ Estadísticas FON: mentiras, manipulación o fantasía] (en inglés)
+* [http://karman.homelinux.net/blog/archives/category/fon/ Modificaciones y noticias del Router FON]
+
+
+Categoría:Empresas de España
+Categoría:Redes inalámbricas
+Categoría:Comunidades inalámbricas
+Categoría:Empresas fundadas en 2005
+Categoría:Proveedores Wi-Fi
