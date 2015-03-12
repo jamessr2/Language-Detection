@@ -1,8 +1,10 @@
 __author__ = 'Lithium'
 import urllib2
 import codecs
+import time
 
 fname = 'dataSourceWebService.csv'
+sleepTime = 1 #In Seconds
 
 with codecs.open(fname, "r", "utf-8") as f:
     content = [line.rstrip('\n') for line in f]
@@ -20,6 +22,7 @@ for line in content:
     lang = splitLine[2].upper() #remove return character
     outputFile = outputPath + lang + '-' + url.split('/')[-1] + fileExtension
     if update.lower() == 'true':
+        time.sleep(sleepTime)
         response = urllib2.urlopen(url)
         data = response.read()      # a `bytes` object
         text = data.decode('utf-8') # a `str`; this step can't be used if data is binary

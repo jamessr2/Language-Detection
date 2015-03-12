@@ -18,34 +18,33 @@ CS 478 Machine Learning Project
 
 ## Possible languages
 
-* English
-* Spanish
-* French
-* Italian
-* German
-* Portuguese
-* Finnish
-* Norwegian
-* Dutch
-* Danish
-* Swedish
-* Estonian
-* Russian
-* Ukrainian
-* Afrikaans
-* Vietnamese
-* Bosnian
-* Czech
-* Esperanto
-* Gaelic
-* Polish
-* Serbian
-* Swahili
-* Welsh
-* Tagalog
-* Greek
-* Coptic
-* Arabic
-* Kurdish
+* English //Check
+* Spanish //Check
+* French //Check
+* Italian //Check
+* German //Check
+* Portuguese //Check
+* Finnish //Check
+* Norwegian //Check
+* Dutch //Check
+* Danish //Check
+* Swedish //Check
+* Russian //Check
+* Ukrainian //Check
+* Afrikaans //Check
+* Vietnamese //Check
+* Bosnian //Check
+* Czech //Check
+* Esperanto //Check
+* Gaelic //Check
+* Polish //Check
+* Serbian //Check
+* Swahili //Check
+* Welsh //Check
+* Tagalog //Check
+* Greek //Check
+* Coptic //No longer exists as a language
+* Arabic //Check
+* Kurdish //Check
 
 etc.
