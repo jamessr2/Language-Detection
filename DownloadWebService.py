@@ -1,5 +1,3 @@
-import shutil
-
 __author__ = 'Lithium'
 import urllib2
 import codecs
