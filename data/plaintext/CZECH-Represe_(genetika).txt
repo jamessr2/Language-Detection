@@ -1,0 +1,14 @@
+CZECH
+'Represe' je v genetice termín označující potlačení genové exprese. Znamená to, že daný přepisován v protein. Pojmu 'represor' se v typickém případě používá v bakterií se vyskytují shluky genů, které jsou pod kontrolou těchto tzv. represorů. Represor se naváže na určitou sekvenci DNA před vlastními geny (na tzv. operátor) a tím umlčí transkripci. V případě známého induktor, který se váže na represor a tím ho deaktivuje – to ve výsledku naopak transkripci spouští.
+
+Represe může ale probíhat i na úrovni RNA, čímž se zase zastaví translace (přepis RNA protein). K represi může dojít i jednoduše tím, že produkty určitého enzymatického děje dosáhnou nadkritické koncentrace.
+
+
+
+
+
+* Inhibice
+
+
+
+Kategorie:Genetika
