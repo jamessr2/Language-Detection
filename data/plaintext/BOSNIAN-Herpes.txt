@@ -1,0 +1,15 @@
+BOSNIAN
+
+mini|Herpes labialis
+'Herpes' je infekcija izazvana Herpes simplex virusima, HSV1 i HSV2. Riječ je o dva oblika jednog istog virusa koji se razlikuju po mjestu manifestacije ali imaju sličnu kliničku sliku. Način ulaska u organizam im je različit pa se tako HSV1 ili labijalni herpes dobija oralnim putem i manifestuje se najčešće u predjelu lica (usta, nos) a HSV2 ili genitalni herpes se dobija polnim putem i stoga spada u polno prenosive bolesti a manifestuje se u području genitalnih organa. Izvor infekcije je isključivo čovjek. Infekciju također može prenijeti trudnica na dijete, rjeđe preko posteljice a češće prilikom rođenja (tj. pri prolasku novorođenčeta koz porođajni kanal) što može izazvati teške posljedice po novorođenče. Iz tog razloga se trudnicama koje su nosioci ovog virusa najčešće preporučuje porođaj putem carskog reza.
+
+
+Pri primarnom kontaktu sa ovim virusom nastaje inicijalna infekcija koju karakterišu povišena temperatura, opšta slabost, bolovi u mišićima, uvećanje limfnih čvorova itd. što spada u kategoriju opštih simptoma. Međutim, ima slučajeva kada se ne javi ni jedan od ovih simptoma i infekcija virusom prolazi nezapaženo - inaparentna infekcija. Što se tiče lokalnih simptoma javljaju se osjećaj napetosti i svraba na mjestu gdje se nakon nekog vremena pojavljuju plikovi veličine 1-2mm koji su ispunjeni bijelo-žutom tečnošću. Oni ubrzo pucaju i prave kraste koje se suše i ne ostavljaju ožiljak. Kod genitalnog herpesa lokalizovani su na spoljnim genitalijama, grliću materice, izvodnom mokraćnom kanalu, nervnog sistema gdje se smješta u nervne ćelije i prelazi u stanje mirovanja zaštićen od imunog sistema. Upravo je to razlog zbog kojeg je ovaj virus sposoban da doživotno ostane u organizmu. Različiti provocirajući faktori kao što su imuniteta, mehanička oštećenja, operacije itd. dovode do reaktivacije virusa i njegov prelazak iz latentnog u aktivno stanje. Međutim, simptomatologija ponovnog aktiviranja virusa je po pravilu blaža, kraće traje i nema opštih (ako ima znatno su blaži) već samo lokalnih simptoma. Ponovne infekcije kod organizma koji je u solidnom stanju se rijetko javljaju, jednom godišnje, a kod osoba sa slabijim imunim sistemom mogu se javiti i više puta godišnje.
+
+
+Prevencija se zasniva na zaštićenom seksualnom kontaktu (prezervativ) kao i jačanju imunog sistema. Liječenje se sprovodi upotrebom antivirusnog lijeka na bazi aciklovira, koji značajno ublažava simptome. Međutim, ovaj lijek ne može potpuno da eliminiše virus iz organizma jer uvijek ostaje jedan procenat virusa koji se nalaze ”uspavani” u nervnim ćelijama i koji se mogu aktivirati.
+
+
+
+Kategorija:Medicina
+Kategorija:Zarazne bolesti

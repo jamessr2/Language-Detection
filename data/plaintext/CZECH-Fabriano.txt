@@ -1,0 +1,102 @@
+CZECH
+
+
+'Fabriano' je italské město v provincii Macerata v oblasti Marche. 
+
+V roce 2012 zde žilo 30&nbsp;982 obyvatel.
+
+
+PG), MC), Fiuminata (MC), Fossato di Vico (PG), Genga, Gualdo Tadino (PG), Matelica (MC), Nocera Umbra (PG), Poggio San Vicino (MC), Sassoferrato, Serra San Quirico, Sigillo (PG)
+
+
+<timeline>
+Colors=
+  id:lightgrey value:gray(0.9)
+  id:darkgrey  value:gray(0.7)
+  id:sfondo value:rgb(1,1,1)
+  id:barra value:rgb(0.6,0.7,0.8)
+
+ImageSize  = width:600 height:323
+PlotArea   = left:50 bottom:50 top:30 right:30
+DateFormat = x.y
+Period     = from:0 till:40000
+TimeAxis   = orientation:vertical
+AlignBars  = justify
+ScaleMajor = gridcolor:darkgrey increment:10000 start:0
+ScaleMinor = gridcolor:lightgrey increment:2000 start:0
+BackgroundColors = canvas:sfondo
+
+BarData=
+  bar:1861 text:1861
+  bar:1871 text:1871
+  bar:1881 text:1881
+  bar:1901 text:1901
+  bar:1911 text:1911
+  bar:1921 text:1921
+  bar:1931 text:1931
+  bar:1936 text:1936
+  bar:1951 text:1951
+  bar:1961 text:1961
+  bar:1971 text:1971
+  bar:1981 text:1981
+  bar:1991 text:1991
+  bar:2001 text:2001
+  bar:2012 text:2012
+
+PlotData=
+  color:barra width:20 align:left
+  bar:1861 from:0 till: 18443
+  bar:1871 from:0 till: 19771
+  bar:1881 from:0 till: 19610
+  bar:1901 from:0 till: 23085
+  bar:1911 from:0 till: 25011
+  bar:1921 from:0 till: 27260
+  bar:1931 from:0 till: 27681
+  bar:1936 from:0 till: 26473
+  bar:1951 from:0 till: 28017
+  bar:1961 from:0 till: 27389
+  bar:1971 from:0 till: 27278
+  bar:1981 from:0 till: 28727
+  bar:1991 from:0 till: 28721
+  bar:2001 from:0 till: 30019
+  bar:2012 from:0 till: 30982
+
+PlotData=
+  bar:1861 at: 18443 fontsize:S text: 18.443 shift:(-8,5)
+  bar:1871 at: 19771 fontsize:S text: 19.771 shift:(-10,5)
+  bar:1881 at: 19610 fontsize:S text: 19.610 shift:(-10,5)
+  bar:1901 at: 23085 fontsize:S text: 23.085 shift:(-10,5)
+  bar:1911 at: 25011 fontsize:S text: 25.011 shift:(-10,5)
+  bar:1921 at: 27260 fontsize:S text: 27.260 shift:(-10,5)
+  bar:1931 at: 27681 fontsize:S text: 27.681 shift:(-10,5)
+  bar:1936 at: 26473 fontsize:S text: 26.473 shift:(-10,5)
+  bar:1951 at: 28017 fontsize:S text: 28.017 shift:(-10,5)
+  bar:1961 at: 27389 fontsize:S text: 27.389 shift:(-10,5)
+  bar:1971 at: 27278 fontsize:S text: 27.278 shift:(-10,5)
+  bar:1981 at: 28727 fontsize:S text: 28.727 shift:(-10,5)
+  bar:1991 at: 28721 fontsize:S text: 28.721 shift:(-10,5)
+  bar:2001 at: 30019 fontsize:S text: 30.019 shift:(-10,5)
+  bar:2012 at: 30982 fontsize:S text: 30.982 shift:(-10,5)
+
+TextData=
+  fontsize:S pos:(20,20)
+  text: "Zdroj dat: ISTAT"
+</timeline>
+
+Zdroj: 
+
+
+
+
+
+
+
+* [http://www.piazzalta.it oficiální stránky obce]
+* 
+
+
+
+
+
+Kategorie:Obce v provincii Ancona
+Kategorie:Města v Itálii

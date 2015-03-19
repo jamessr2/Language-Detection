@@ -1,0 +1,60 @@
+BOSNIAN
+
+
+'NGC 228' (također poznat kao 'IRAS 00401+2313', 'MCG 4-2-48', 'PGC 2563' i 'UGC 458') je sg od Zemlje i nalazi se u sazviježđu Andromeda. Najveći prečnik je 1,20 (119 hiljada sg) a najmanji 1,1 uglovnih minuta (109 hiljada sg). Prvo otkriće je napravio 10. oktobra 1879. godine.
+
+
+Sljedeći spisak sadrži deset najbližih NGC/IC objekata.
+
+
+
+
+* Novi opći katalog
+* Spisak NGC objekata
+* Spisak galaksija
+
+
+*  Prividna magnituda od 13,7 – Apsolutna magnituda: 'M = m - 5 ((log<sub>10</sub> D<sub>L</sub>) - 1)', gdje je 'm=13,7' i 'D<sub>L</sub>=104,5 * 10<sup>6</sup>'.
+*  1,20 uglovnih minuta – 'S = A * D * 0,000291 * P', gdje je 'A=1,20', 'D=104,5' i 'P = 3,2616'.
+*  Bazirano na euklidsku udaljenost.
+
+<references>
+<ref name="klima">
+ 
+</ref>
+
+
+<ref name="ned"> 
+</ref>
+
+</references>
+
+
+*  
+*  
+*  
+  
+
+
+
+*  [http://aladin.u-strasbg.fr/java/alapre.pl?-c=0+42+54.5++23+30+12&button=RGB NGC 228 na Aladin pregledaču]
+
+*  [http://spider.seds.org/ngc/ngc.html Interaktivni NGC Online Katalog]
+*  [http://simbad.u-strasbg.fr/simbad/ Astronomska baza podataka SIMBAD]
+*  [http://www.messier45.com/index.html#s/cat%20NGC NGC katalog na Messier45.com]
+*  [http://www.ngcicproject.org/ NGC/IC projekt]
+*  [http://heasarc.gsfc.nasa.gov/W3Browse/all/ngc2000.html NGC2000 na NASA sajtu]
+*  [http://www.nightskyatlas.com/ngcData.jsp NGC na 'The Night Sky Atlas' sajtu]
+
+
+
+
+
+
+Kategorija:Andromeda (sazviježđe)
+Kategorija:IRAS objekti
+Kategorija:MCG objekti
+Kategorija:NGC objekti
+Kategorija:PGC objekti
+Kategorija:Prečkaste spiralne galaksije
+Kategorija:UGC objekti

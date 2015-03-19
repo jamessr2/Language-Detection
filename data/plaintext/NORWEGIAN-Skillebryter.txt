@@ -1,0 +1,6 @@
+NORWEGIAN
+en skillebryter er en elektrisk bryter der man kan bare bruke når det er spenningsløst anlegg
+<!-- SUBSTUBB-MERKE START -->
+<!-- Når du utvider artikkelen kan du samtidig fjerne denne markeringen. -->
+
+<!-- SUBSTUBB-MERKE SLUTT -->

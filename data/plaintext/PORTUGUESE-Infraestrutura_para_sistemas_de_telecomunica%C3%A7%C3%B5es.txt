@@ -1,0 +1,46 @@
+PORTUGUESE
+
+
+A 'infra-estrutura para sistemas de telecomunicações' é composta por sistemas essenciais ao funcionamento dos equipamentos de transmissão e comutação.
+
+A infra-estrutura básica para o funcionamento de equipamentos e serviços de telecomunicações consiste de aterramento e pára-raios, sistema de ar-condicionado (refrigeração) e sistema de energia.
+
+Um prédio de telecomunicações deve obedecer a critérios especiais de localização e construção, como, por exemplo, estar longe de aeroportos e estradas de ferro.
+
+As torres de telecomunicações servem para suportar as rádio.
+
+Os sistemas de alarme, aterramento e pára-raios objetivam evitar acidentes devido a fogo e descargas elétricas da atmosfera ou não.
+
+O sistema de ar-condicionado deve otimizar o funcionamento dos equipamentos e proporciona conforto ao ambiente de trabalho.
+
+O sistema de energia, que permite o funcionamento dos equipamentos, é baseado na rede pública ou em grupos geradores. Um equipamento de supervisão controla a entrada de energia elétrica, acionando geradores em caso de falta de energia.
+
+
+O suprimento de energia (alimentação) para os equipamentos de comutação é do tipo centralizado. Isso é, realizado através de juntores das cadeias de conversação ou dos circuitos que possibilitam a transmissão de voz, convertida em sinais eletromagnéticos.
+
+A rede pública de baterias que trabalham em regime de compensação, isto é, atende às variações bruscas de energia necessária aos equipamentos de comutação. A energia fornecida pelo retificador é uma energia média que acarreta carga ou descarga das baterias.
+
+Quando há falha do suprimento de energia pública, as baterias assumem temporariamente o fornecimento de energia, evitando corte do serviço, até o momento em que uma chave comutadora é acionada para a transferência de energia da rede pública para o motor gerador que foi acionado. Além do mais, os sistemas de transmissão também possuem um sistema de energia semelhante ao descrito para a comutação, que os alimenta eletricamente.
+
+Os geradores de energia para a garantia do fornecimento aos sistemas de telecomunicações podem ser de vários tipos. Por exemplo, em alguns modelos são usados geradores de motor a óleo diesel, semelhantes aqueles utilizados no provimento de energia a prédios comerciais.
+
+
+
+*Sinalização por canal comum número 7
+*Telefonia
+*Telefone
+*Telegrafia
+*Telégrafo
+*Rede de Telecomunicações
+*Rede de Transmissão
+*Rede de Telefonia Fixa
+*Rede de Telefonia Celular
+*Princípios da Gerência de Redes
+*Gerência de Redes de Telecomunicações
+*Modelo TMN
+*Alexander Graham Bell
+*Guglielmo Marconi
+
+
+
+Categoria:Telefonia

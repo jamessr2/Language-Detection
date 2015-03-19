@@ -1,0 +1,59 @@
+BOSNIAN
+
+
+'IC 2486' (također poznat kao 'MCG 5-23-6', 'PGC 26982' i 'UGC 5062') je sg od Zemlje i nalazi se u sazviježđu Lav. Najveći prečnik je 0,90 (165 hiljada sg) a najmanji 0,8 uglovnih minuta (147 hiljada sg). Prvo otkriće je napravio 16. maja 1903. godine.
+
+
+Sljedeći spisak sadrži deset najbližih NGC/IC objekata.
+
+
+
+
+* Novi opći katalog
+* Spisak IC objekata
+* Spisak galaksija
+
+
+*  Prividna magnituda od 14,0 – Apsolutna magnituda: 'M = m - 5 ((log<sub>10</sub> D<sub>L</sub>) - 1)', gdje je 'm=14,0' i 'D<sub>L</sub>=193,6 * 10<sup>6</sup>'.
+*  0,90 uglovnih minuta – 'S = A * D * 0,000291 * P', gdje je 'A=0,90', 'D=193,6' i 'P = 3,2616'.
+*  Bazirano na euklidsku udaljenost.
+
+<references>
+<ref name="klima">
+ 
+</ref>
+
+
+<ref name="ned"> 
+</ref>
+
+</references>
+
+
+*  
+*  
+*  
+  
+
+
+
+*  [http://aladin.u-strasbg.fr/java/alapre.pl?-c=9+30+17.4++26+38+28&button=RGB IC 2486 na Aladin pregledaču]
+
+*  [http://spider.seds.org/ngc/ngc.html Interaktivni NGC Online Katalog]
+*  [http://simbad.u-strasbg.fr/simbad/ Astronomska baza podataka SIMBAD]
+*  [http://www.messier45.com/index.html#s/cat%20IC IC katalog na Messier45.com]
+*  [http://www.ngcicproject.org/ NGC/IC projekt]
+*  [http://heasarc.gsfc.nasa.gov/W3Browse/all/ngc2000.html NGC2000 na NASA sajtu]
+*  [http://www.nightskyatlas.com/ngcData.jsp IC na 'The Night Sky Atlas' sajtu]
+
+
+
+
+
+
+Kategorija:IC objekti
+Kategorija:Lav (sazviježđe)
+Kategorija:MCG objekti
+Kategorija:PGC objekti
+Kategorija:Prečkaste spiralne galaksije
+Kategorija:UGC objekti

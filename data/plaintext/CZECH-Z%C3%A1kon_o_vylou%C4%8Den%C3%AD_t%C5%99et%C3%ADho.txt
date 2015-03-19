@@ -1,0 +1,16 @@
+CZECH
+thumb|upright|Žena těhotná buď je, nebo není, třetí možnost neexistuje
+
+'Zákon o vyloučení třetího' (latinsky 'tertium non datur') je logický princip, který říká, že pro každé tvrzení 'P' platí, že výraz  <math>P\lor\neg P</math> ('P' nebo non 'P') je pravdivý.
+
+Například jestliže 'P' je výrok
+: 'Kaktus je zvíře.'
+pak následující složený výrok (disjunkce)
+: 'Kaktus je zvíře, nebo kaktus není zvíře.'
+je vždy pravdivý (bez ohledu na pravdivost výroku 'P').
+
+Název zákona popisuje výslednou disjunkci, která zhruba vyjadřuje fakt, že příslušné tvrzení je buď pravdivé, nebo nepravdivé, neexistuje žádná třetí možnost.
+
+Zákon je jedním ze základních axiomů platných v mnoha klasických dvouhodnotových logikách. V některých logických systémech však tento princip neplatí. Příkladem mohou být vícehodnotové logiky (např. fuzzy logika či intuicionistická logika).
+
+Kategorie:Logika

@@ -1,0 +1,18 @@
+ESPERANTO
+
+
+'244 Sito' estas malgranda sed hela asteroido de la ĉefa asteroida zono, ano de la
+aŭstria astronomo 
+Johann Palisa la  elde la observatorio de Vieno. 
+
+Ĝia nomo aludas verŝajne al Sītā, avataro de la diino Lakŝmio 
+kaj edzino de la reĝo Ramo en la Ramajano.
+
+Recentaj mezuroj elmontris ĝian esceptan malrapidan rotacion
+
+ <!-- Helpo : http://eo.wikipedia.org/wiki/Helpo:Referencoj kaj piednotoj -->
+
+
+* [http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=244;orb=1 244 Sita : Parametroj kaj simulado de orbito] (JAVA necesa)
+
+Sito

@@ -1,0 +1,10 @@
+BOSNIAN
+
+
+* Statistička snaga
+* Monom
+* 'Stepena funkcija': Funkcija oblika <math>f(x)=x^ \!\ </math>, gdje je 'a' realan broj. Pogledajte članak eksponencijacija.
+
+
+
+en:Power function

@@ -1,0 +1,27 @@
+FINNISH
+
+
+'Dietyylieetteri' (C<sub>2</sub>H<sub>5</sub>)<sub>2</sub>O eli C<sub>4</sub>H<sub>10</sub>O, eettereiden aineryhmään, sillä yhdisteessä on happisilta eli -O- kahden tyydyttyneen hiilen välissä. Dietyylieetterista käytetään myös nimityksiä 'etyylieetteri' tai 'etyylioksidi'. Puhekielessä "eetterillä" viitataan usein juuri dietyylieetteriin.
+
+Dietyylieetteri on normaaliolosuhteissa haihtuva, erittäin helposti syttyvä, kirkas neste, jonka leimahduspiste on -45 °C ja itsesyttymislämpötila 160 - 180 °C.
+
+Aineenvaihdunnassa dietyylieetteri muuntuu osittain etanoliksi ja edelleen asetaldehydiksi.
+
+thumb|273px|Dietyylieetteriä
+Dietyylieetteri oli ensimmäinen merkittävä nukutusaine jota käytettiin laajasti 1850–1950 -luvuilla, kunnes sen syrjäyttivät paremmat ja vähemmän tulenarat nukutteet. Dietyylieetteriä voidaan käyttää myös Tonic-veden sisältämän kiniinin uuttamiseen emäksisissä olosuhteissa.
+
+
+
+*
+*[http://kappa.ttl.fi/kemikaalikortit/khtml/nfin0355.htm Dietyylieetterin kansainvälinen kemikaalikortti]
+*[http://www.sigmaaldrich.com/MSDS/MSDS/DisplayMSDSPage.do?country=FI&language=fi&productNumber=309966&brand=SIAL&PageToGoToURL=http%3A%2F%2Fwww.sigmaaldrich.com%2Fcatalog%2Fsearch%3Fterm%3DDiethyl%2Bether%26interface%3DProduct%2520Name%26N%3D0%2B%26mode%3Dmode%2520matchpartialmax%26lang%3Dfi%26region%3DFI%26focus%3DproductN%3D0%2520220003048%2520219853286%2520219853114 Dietyylieetterin käyttöturvallisuustiedote], Sigma Aldrich, viitattu 18.1.2015.
+*[http://www.ketsu.net/htp/pm_valmiit/dietyylieetteri.htm Kemian työsuojeluneuvottelukunta (KETSU): Dietyylieetteri]
+*[http://www.genome.jp/dbget-bin/www_bget?dr:D01772+-kcf Kyoto Encyclopedia of Genes and Genomes (KEGG): Diethyl ether] 
+*[http://www.versuchschemie.de/topic,15304,-Chinin+im+Tonic-Water.html Kiniinin määritys Tonic-vedestä] , Versuchschemie, viitattu 18.1.2015.
+
+
+
+Luokka:Eetterit
+Luokka:Anestesiologia
+Luokka:Dissosiatiivit
+Luokka:Seulonnan keskeiset artikkelit
