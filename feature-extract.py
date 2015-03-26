@@ -83,7 +83,7 @@ def find_vowel_cluster_size(paragraph):
         for word in words:
             # print word
             cluster_size = 0
-            for char in unicode(word, "UTF-8"):
+            for char in word:
                 # print char
                 if char in vowels:
                     cluster_size += 1
