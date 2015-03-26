@@ -3,6 +3,7 @@
 
 import sys
 import re
+import unicodedata
 
 # a useful alphabet detection library I found: https://github.com/EliFinkelshteyn/alphabet-detector
 # supports latin, greek, arabic, hebrew, and cyrillic at least. Possibly more.
@@ -29,10 +30,11 @@ def extract_features(paragraph):
         words = split_words(sentence)
         total_words += len(words)
 
-        # print len(words), words
+        #print len(words), words
 
         for word in words:
-            total_chars += len(word)
+            #total_chars += len(word)
+            total_chars += len([unicodedata.name(c) for c in word if unicodedata.name(c).split()[0] != "COMBINING"])
 
         features["avg_words_per_sentence"] = (total_words * 1.0) / len(sentences)
         features["avg_chars_per_word"] = (total_chars * 1.0) / total_words
@@ -42,7 +44,7 @@ def extract_features(paragraph):
 
 def detect_alphabets(paragraph):
     detector = AlphabetDetector()
-    return detector.detect_alphabet(unicode(paragraph, "UTF-8"))
+    return detector.detect_alphabet(paragraph)
 
 
 def calculate_alphabet_percentages(paragraph, alphabets):
@@ -57,7 +59,7 @@ def calculate_alphabet_percentages(paragraph, alphabets):
         for word in words:
             total_word_count += 1
             for alphabet in alphabets:
-                if detector.only_alphabet_chars(unicode(word, "UTF-8"), alphabet):
+                if detector.only_alphabet_chars(word, alphabet):
                     words_in_alphabet[alphabet] += 1
     # convert counts to percentages
     for alphabet in words_in_alphabet:
@@ -119,9 +121,9 @@ def main():
         for line in f:
             paragraph = line.strip()
             if paragraph:
+                paragraph = unicodedata.normalize("NFKD", unicode(paragraph, "UTF-8"))
                 print extract_features(paragraph)
                 print
-
 
 
 if __name__ == "__main__":
