@@ -20,7 +20,7 @@ def extract_features(paragraph):
     for alphabet in alphabet_percentages:
         features["percent_"+str(alphabet).lower()] = alphabet_percentages[alphabet]
 
-    features["vowel_cluster_size"] = find_vowel_cluster_size(paragraph)
+    features["vowel_cluster_size"], features["consonant_cluster_size"] = find_cluster_sizes(paragraph)
 
     sentences = split_sentences(paragraph)
 
@@ -67,7 +67,7 @@ def calculate_alphabet_percentages(paragraph, alphabets):
     return words_in_alphabet
 
 
-def find_vowel_cluster_size(paragraph):
+def find_cluster_sizes(paragraph):
     vowels = [unicode("Æ", "UTF-8"), unicode("æ", "UTF-8"), unicode("A", "UTF-8"), unicode("a", "UTF-8"), unicode("E", "UTF-8"), unicode("e", "UTF-8"), unicode("I", "UTF-8"),
               unicode("i", "UTF-8"), unicode("O", "UTF-8"), unicode("o", "UTF-8"), unicode("U", "UTF-8"), unicode("u", "UTF-8") ,unicode("Y", "UTF-8"), unicode("y", "UTF-8"),
               unicode("е", "UTF-8"), unicode("ё", "UTF-8"), unicode("и", "UTF-8"), unicode("ю", "UTF-8"), unicode("я", "UTF-8"), unicode("ы", "UTF-8"), unicode("э", "UTF-8"),
@@ -78,25 +78,35 @@ def find_vowel_cluster_size(paragraph):
 
     sentences = split_sentences(paragraph)
     vowel_cluster_sizes = []
+    consonant_cluster_sizes = []
     for sentence in sentences:
         words = split_words(sentence)
         for word in words:
             # print word
-            cluster_size = 0
+            vowel_cluster_size = 0
+            consonant_cluster_size = 0;
+
             for char in word:
                 # print char
                 if char in vowels:
-                    cluster_size += 1
+                    vowel_cluster_size += 1
+                    if consonant_cluster_size:
+                        consonant_cluster_sizes.append(consonant_cluster_size)
+                        consonant_cluster_size = 0
                 else:
-                    if cluster_size != 0:
-                        vowel_cluster_sizes.append(cluster_size)
+                    consonant_cluster_size += 1
+                    if vowel_cluster_size:
+                        vowel_cluster_sizes.append(vowel_cluster_size)
                         # print "Found cluster of size " + str(cluster_size)
-                        cluster_size = 0
-            if cluster_size != 0:
+                        vowel_cluster_size = 0
+            if vowel_cluster_size:
                 # print "(End) Found cluster of size " + str(cluster_size)
-                vowel_cluster_sizes.append(cluster_size)
+                vowel_cluster_sizes.append(vowel_cluster_size)
+            if consonant_cluster_size:
+                consonant_cluster_sizes.append(consonant_cluster_size)
+
     # print vowel_cluster_sizes
-    return numpy.average(vowel_cluster_sizes)
+    return numpy.average(vowel_cluster_sizes), numpy.average(consonant_cluster_sizes)
 
 
 
