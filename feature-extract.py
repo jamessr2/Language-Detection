@@ -9,6 +9,8 @@ import unicodedata
 # supports latin, greek, arabic, hebrew, and cyrillic at least. Possibly more.
 from alphabet_detector import AlphabetDetector # pip install alphabet-detector
 
+import glob
+
 import numpy
 
 
@@ -123,17 +125,60 @@ def split_words(sentence):
     return words
 
 
+def convert_features_to_arff(instances):
+    # loop through all of the features in the vector once to see what all of the columns are.
+    features = []
+    for instance in instances:
+        for key in instance:
+            if key not in features and key != "language":
+                features.append(key)
+    # make sure that language is our last feature
+    features.append("language")
+
+    # I'm looping through and saving to variables, then printing in case we later decide we want this function to return a string or something.
+    for feature in features:
+        if feature == "language":
+            print "@ATTRIBUTE language class @ATTRIBUTE language class { GREEK, DUTCH, BOSNIAN, UKRAINIAN, VIETNAMESE, NORWEGIAN, CZECH, AFRIKAANS, RUSSIAN, WELSH, GAELIC, ESPERANTO, ARABIC, FRENCH, SWAHILI, TAGALOG, PORTUGUESE, FINNISH, ITALIAN, SPANISH, POLISH, DANISH, GERMAN, KURDISH, SERBIAN, SWEDISH }"
+        else:
+            print "@ATTRIBUTE %s Continuous" % feature
+
+    print "@DATA"
+
+    # and now loop through a second time to extract the data
+    formatted_instances = []
+    for instance in instances:
+        formatted_instance = ""
+        for feature in features:
+            if feature in instance:
+                formatted_instance += str(instance[feature]) + ", "
+            else:
+                formatted_instance += "0, "
+        formatted_instance = formatted_instance[:-2]
+        formatted_instances.append(formatted_instance)
+
+    for formatted_instance in formatted_instances:
+        print formatted_instance
+
 def main():
     paragraph = None
 
-    fname = sys.argv[1]
-    with open(fname, "r") as f:
-        for line in f:
-            paragraph = line.strip()
-            if paragraph:
-                paragraph = unicodedata.normalize("NFKD", unicode(paragraph, "UTF-8"))
-                print extract_features(paragraph)
-                print
+    # support matching a whole bunch of files, instead of just a single file.
+    filenames = glob.glob(sys.argv[1])
+
+    features = []
+    for fname in filenames:
+        print "processing file %s" % fname
+        if fname == "data/plaintext/GERMAN-Gert-Peter_Reichert.txt":
+            continue
+        with open(fname, "r") as f:
+            for line in f:
+                paragraph = line.strip()
+                if paragraph:
+                    paragraph = unicodedata.normalize("NFKD", unicode(paragraph, "UTF-8"))
+                    features.append(extract_features(paragraph))
+                    features[len(features) - 1]["language"] = fname.split("-")[0].split("/")[-1]
+
+    convert_features_to_arff(features)
 
 
 if __name__ == "__main__":
