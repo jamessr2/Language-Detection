@@ -10,8 +10,10 @@ import unicodedata
 from alphabet_detector import AlphabetDetector # pip install alphabet-detector
 
 import glob
-
 import numpy
+
+
+MIN_LEN = 25
 
 
 def extract_features(paragraph):
@@ -20,7 +22,8 @@ def extract_features(paragraph):
     alphabets = detect_alphabets(paragraph)
     alphabet_percentages = calculate_alphabet_percentages(paragraph, alphabets)
     for alphabet in alphabet_percentages:
-        features["percent_"+str(alphabet).lower()] = alphabet_percentages[alphabet]
+        if alphabet not in set(["MODIFIER", "CJK", "HEBREW", "DEVANAGARI"]):
+            features["percent_"+str(alphabet).lower()] = alphabet_percentages[alphabet]
 
     features["vowel_cluster_size"], features["consonant_cluster_size"] = find_cluster_sizes(paragraph)
 
@@ -108,7 +111,9 @@ def find_cluster_sizes(paragraph):
                 consonant_cluster_sizes.append(consonant_cluster_size)
 
     # print vowel_cluster_sizes
-    return numpy.average(vowel_cluster_sizes), numpy.average(consonant_cluster_sizes)
+    avcs = numpy.average(vowel_cluster_sizes) if vowel_cluster_sizes else 0
+    accs = numpy.average(consonant_cluster_sizes) if consonant_cluster_sizes else 0
+    return avcs, accs
 
 
 
@@ -135,10 +140,12 @@ def convert_features_to_arff(instances):
     # make sure that language is our last feature
     features.append("language")
 
+    print "@RELATION"
+
     # I'm looping through and saving to variables, then printing in case we later decide we want this function to return a string or something.
     for feature in features:
         if feature == "language":
-            print "@ATTRIBUTE language class @ATTRIBUTE language class { GREEK, DUTCH, BOSNIAN, UKRAINIAN, VIETNAMESE, NORWEGIAN, CZECH, AFRIKAANS, RUSSIAN, WELSH, GAELIC, ESPERANTO, ARABIC, FRENCH, SWAHILI, TAGALOG, PORTUGUESE, FINNISH, ITALIAN, SPANISH, POLISH, DANISH, GERMAN, KURDISH, SERBIAN, SWEDISH }"
+            print "@ATTRIBUTE language { GREEK, DUTCH, BOSNIAN, UKRAINIAN, VIETNAMESE, NORWEGIAN, CZECH, AFRIKAANS, RUSSIAN, WELSH, GAELIC, ESPERANTO, ARABIC, FRENCH, SWAHILI, TAGALOG, PORTUGUESE, FINNISH, ITALIAN, SPANISH, POLISH, DANISH, GERMAN, KURDISH, SERBIAN, SWEDISH, ENGLISH }"
         else:
             print "@ATTRIBUTE %s Continuous" % feature
 
@@ -167,16 +174,20 @@ def main():
 
     features = []
     for fname in filenames:
-        print "processing file %s" % fname
+        #print "%% processing file %s" % fname
         if fname == "data/plaintext/GERMAN-Gert-Peter_Reichert.txt":
             continue
         with open(fname, "r") as f:
-            for line in f:
+            for lnum, line in enumerate(f):
                 paragraph = line.strip()
-                if paragraph:
-                    paragraph = unicodedata.normalize("NFKD", unicode(paragraph, "UTF-8"))
-                    features.append(extract_features(paragraph))
-                    features[len(features) - 1]["language"] = fname.split("-")[0].split("/")[-1]
+                if len(paragraph) > MIN_LEN:
+                    paragraph = unicodedata.normalize("NFKD", unicode(paragraph, "UTF-8")).lower()
+                    if " ".join([unicodedata.name(c).split()[0] for c in paragraph[:3]]) != "LATIN LATIN COLON": #skip language links
+                        features.append(extract_features(paragraph))
+                        features[-1]["language"] = fname.split("-")[0].split("/")[-1]
+                        #features[-1]["fname"] = fname.split("/")[-1]
+                        #features[-1]["lnum"] = lnum + 1
+                        #print features[-1]
 
     convert_features_to_arff(features)
 
