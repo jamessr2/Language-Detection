@@ -27,6 +27,11 @@ def extract_features(paragraph):
 
     features["vowel_cluster_size"], features["consonant_cluster_size"] = find_cluster_sizes(paragraph)
 
+    features["avg_diacritics_per_word"], diacritics_percentages = find_diacritics(paragraph)
+
+    for key in diacritics_percentages:
+        features["percent_diacritics_" + key] = diacritics_percentages[key]
+
     sentences = split_sentences(paragraph)
 
     total_words = 0
@@ -44,12 +49,76 @@ def extract_features(paragraph):
         features["avg_words_per_sentence"] = (total_words * 1.0) / len(sentences)
         features["avg_chars_per_word"] = (total_chars * 1.0) / total_words
 
+    # print features
     return features
 
 
 def detect_alphabets(paragraph):
     detector = AlphabetDetector()
     return detector.detect_alphabet(paragraph)
+
+def find_diacritics(paragraph):
+    number_of_diacritics_per_word = []
+    counts = {}
+    counts["acute"] = 0
+    counts["caron"] = 0
+    counts["grave"] = 0
+    counts["circumflex"] = 0
+    counts["tilde"] = 0
+    counts["cedilla"] = 0
+    counts["breve"] = 0
+    counts["diaeresis"] = 0
+    counts["ring_above"] = 0
+    counts["ogonek"] = 0
+    counts["horn"] = 0
+    counts["hook_above"] = 0
+    counts["dot_below"] = 0
+    counts["macron"] = 0
+    total_diacritics = 0
+    sentences = split_sentences(paragraph)
+    for sentence in sentences:
+        words = split_words(sentence)
+        for word in words:
+            number_of_diacritics = 0
+            for char in word:
+                if "COMBINING" in unicodedata.name(char):
+                    number_of_diacritics += 1
+                    total_diacritics += 1
+                    # print unicodedata.name(char)
+                    if "ACUTE" in unicodedata.name(char):
+                        counts["acute"] += 1
+                    elif "CARON" in unicodedata.name(char):
+                        counts["caron"] += 1
+                    elif "GRAVE" in unicodedata.name(char):
+                        counts["grave"] += 1
+                    elif "DIAERESIS" in unicodedata.name(char):
+                        counts["diaeresis"] += 1
+                    elif "CIRCUMFLEX" in unicodedata.name(char):
+                        counts["circumflex"] += 1
+                    elif "TILDE" in unicodedata.name(char):
+                        counts["tilde"] += 1
+                    elif "CEDILLA" in unicodedata.name(char):
+                        counts["cedilla"] += 1
+                    elif "BREVE" in unicodedata.name(char):
+                        counts["breve"] += 1
+                    elif "RING ABOVE" in unicodedata.name(char):
+                        counts["ring_above"] += 1
+                    elif "OGONEK" in unicodedata.name(char):
+                        counts["ogonek"] += 1
+                    elif "HORN" in unicodedata.name(char):
+                        counts["horn"] += 1
+                    elif "HOOK ABOVE" in unicodedata.name(char):
+                        counts["hook_above"] += 1
+                    elif "DOT BELOW" in unicodedata.name(char):
+                        counts["dot_below"] += 1
+                    elif "MACRON" in unicodedata.name(char):
+                        counts["macron"] += 1
+            number_of_diacritics_per_word.append(number_of_diacritics)
+
+    for key in counts:
+        counts[key] = float(counts[key])/total_diacritics if total_diacritics else 0
+    return numpy.average(number_of_diacritics_per_word), counts
+
 
 
 def calculate_alphabet_percentages(paragraph, alphabets):
@@ -174,7 +243,7 @@ def main():
 
     features = []
     for fname in filenames:
-        #print "%% processing file %s" % fname
+        # print "%% processing file %s" % fname
         if fname == "data/plaintext/GERMAN-Gert-Peter_Reichert.txt":
             continue
         with open(fname, "r") as f:
