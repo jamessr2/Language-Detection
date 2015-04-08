@@ -1,0 +1,190 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.GainRatioAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1" -W weka.classifiers.trees.RandomForest -- -I 101 -K 4 -S 1 -num-slots 1
+Relation:     Language
+Instances:    4873
+Attributes:   24
+              percent_diacritics_ogonek
+              avg_words_per_sentence
+              percent_diacritics_grave
+              vowel_cluster_size
+              consonant_cluster_size
+              percent_diacritics_ring_above
+              percent_diacritics_tilde
+              percent_diacritics_breve
+              avg_chars_per_word
+              percent_diacritics_horn
+              percent_diacritics_acute
+              percent_diacritics_hook_above
+              percent_diacritics_circumflex
+              percent_latin
+              percent_diacritics_caron
+              percent_diacritics_dot_below
+              percent_diacritics_macron
+              percent_diacritics_cedilla
+              percent_greek
+              percent_diacritics_diaeresis
+              avg_diacritics_per_word
+              percent_cyrillic
+              percent_arabic
+              language
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 24 language):
+	Gain Ratio feature evaluator
+
+Ranked attributes:
+ 0.8949   23 percent_arabic
+ 0.8817   19 percent_greek
+ 0.7735   16 percent_diacritics_dot_below
+ 0.7585   22 percent_cyrillic
+ 0.7538   14 percent_latin
+ 0.7314   10 percent_diacritics_horn
+ 0.7074   12 percent_diacritics_hook_above
+ 0.648     1 percent_diacritics_ogonek
+ 0.5796    6 percent_diacritics_ring_above
+ 0.5574    8 percent_diacritics_breve
+ 0.5487   18 percent_diacritics_cedilla
+ 0.5402   15 percent_diacritics_caron
+ 0.5298   13 percent_diacritics_circumflex
+ 0.4805    3 percent_diacritics_grave
+ 0.4437   11 percent_diacritics_acute
+ 0.442    20 percent_diacritics_diaeresis
+ 0.4336    7 percent_diacritics_tilde
+ 0.2833    5 consonant_cluster_size
+ 0.2591   21 avg_diacritics_per_word
+ 0.2096    4 vowel_cluster_size
+ 0.108     9 avg_chars_per_word
+ 0.0748    2 avg_words_per_sentence
+ 0        17 percent_diacritics_macron
+
+Selected attributes: 23,19,16,22,14,10,12,1,6,8,18,15,13,3,11,20,7,5,21,4,9,2,17 : 23
+
+
+Header of reduced data:
+@relation 'Language-weka.filters.unsupervised.attribute.Remove-V-R23,19,16,22,14,10,12,1,6,8,18,15,13,3,11,20,7,5,21,4,9,2,17,24'
+
+@attribute percent_arabic numeric
+@attribute percent_greek numeric
+@attribute percent_diacritics_dot_below numeric
+@attribute percent_cyrillic numeric
+@attribute percent_latin numeric
+@attribute percent_diacritics_horn numeric
+@attribute percent_diacritics_hook_above numeric
+@attribute percent_diacritics_ogonek numeric
+@attribute percent_diacritics_ring_above numeric
+@attribute percent_diacritics_breve numeric
+@attribute percent_diacritics_cedilla numeric
+@attribute percent_diacritics_caron numeric
+@attribute percent_diacritics_circumflex numeric
+@attribute percent_diacritics_grave numeric
+@attribute percent_diacritics_acute numeric
+@attribute percent_diacritics_diaeresis numeric
+@attribute percent_diacritics_tilde numeric
+@attribute consonant_cluster_size numeric
+@attribute avg_diacritics_per_word numeric
+@attribute vowel_cluster_size numeric
+@attribute avg_chars_per_word numeric
+@attribute avg_words_per_sentence numeric
+@attribute percent_diacritics_macron numeric
+@attribute language {GREEK,DUTCH,BOSNIAN,UKRAINIAN,VIETNAMESE,NORWEGIAN,CZECH,AFRIKAANS,RUSSIAN,WELSH,GAELIC,ESPERANTO,ARABIC,FRENCH,SWAHILI,TAGALOG,PORTUGUESE,FINNISH,ITALIAN,SPANISH,POLISH,DANISH,GERMAN,KURDISH,SERBIAN,SWEDISH,ENGLISH}
+
+@data
+
+
+Classifier Model
+Random forest of 101 trees, each constructed while considering 4 random features.
+Out of bag error: 0.3616
+
+
+
+Time taken to build model: 3.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3124               64.1084 %
+Incorrectly Classified Instances      1749               35.8916 %
+Kappa statistic                          0.6243
+Mean absolute error                      0.0353
+Root mean squared error                  0.1317
+Relative absolute error                 49.8758 %
+Root relative squared error             69.9509 %
+Coverage of cases (0.95 level)          92.3866 %
+Mean rel. region size (0.95 level)      20.0242 %
+Total Number of Instances             4873     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.924    0.003    0.940      0.924    0.932      0.928    0.983     0.956     GREEK
+                 0.157    0.006    0.229      0.157    0.186      0.182    0.830     0.134     DUTCH
+                 0.799    0.020    0.682      0.799    0.736      0.723    0.967     0.845     BOSNIAN
+                 0.804    0.018    0.759      0.804    0.781      0.765    0.983     0.868     UKRAINIAN
+                 0.933    0.002    0.907      0.933    0.920      0.919    0.968     0.938     VIETNAMESE
+                 0.538    0.018    0.500      0.538    0.518      0.502    0.924     0.571     NORWEGIAN
+                 0.749    0.010    0.767      0.749    0.758      0.747    0.961     0.834     CZECH
+                 0.476    0.013    0.488      0.476    0.482      0.468    0.938     0.501     AFRIKAANS
+                 0.778    0.007    0.832      0.778    0.804      0.796    0.980     0.873     RUSSIAN
+                 0.196    0.009    0.328      0.196    0.246      0.241    0.836     0.225     WELSH
+                 0.455    0.024    0.453      0.455    0.454      0.430    0.931     0.444     GAELIC
+                 0.688    0.022    0.637      0.688    0.662      0.642    0.947     0.742     ESPERANTO
+                 0.916    0.006    0.891      0.916    0.903      0.898    0.982     0.924     ARABIC
+                 0.671    0.022    0.626      0.671    0.648      0.628    0.950     0.751     FRENCH
+                 0.337    0.013    0.361      0.337    0.348      0.335    0.907     0.331     SWAHILI
+                 0.143    0.004    0.259      0.143    0.184      0.186    0.793     0.081     TAGALOG
+                 0.534    0.008    0.675      0.534    0.596      0.589    0.901     0.597     PORTUGUESE
+                 0.725    0.017    0.732      0.725    0.729      0.712    0.965     0.821     FINNISH
+                 0.551    0.017    0.544      0.551    0.547      0.530    0.913     0.585     ITALIAN
+                 0.496    0.035    0.443      0.496    0.468      0.437    0.916     0.440     SPANISH
+                 0.633    0.015    0.636      0.633    0.635      0.619    0.921     0.671     POLISH
+                 0.234    0.016    0.280      0.234    0.255      0.238    0.887     0.242     DANISH
+                 0.619    0.022    0.628      0.619    0.624      0.601    0.934     0.680     GERMAN
+                 0.784    0.002    0.889      0.784    0.833      0.832    0.996     0.870     KURDISH
+                 0.500    0.007    0.611      0.500    0.550      0.544    0.963     0.624     SERBIAN
+                 0.723    0.004    0.779      0.723    0.750      0.746    0.978     0.812     SWEDISH
+                 0.534    0.034    0.425      0.534    0.474      0.449    0.914     0.492     ENGLISH
+Weighted Avg.    0.641    0.016    0.638      0.641    0.637      0.623    0.943     0.681     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   k   l   m   n   o   p   q   r   s   t   u   v   w   x   y   z  aa   <-- classified as
+ 218   1   2   0   0   0   1   1   0   1   0   0   0   3   1   0   2   0   2   0   1   1   0   0   0   0   2 |   a = GREEK
+   1   8   0   0   0   0   0  13   0   1   0   2   0   0   3   0   0   3   2   3   1   1   9   0   0   0   4 |   b = DUTCH
+   1   0 199   3   0   3   2   1   0   5   0  10   1   0   3   1   1   1   2   5   4   2   2   0   0   1   2 |   c = BOSNIAN
+   0   0   1 258   1   0   0   1  27   0   0   0   0   1   1   0   0   1   0   0   3   1   1   0  25   0   0 |   d = UKRAINIAN
+   0   0   0   0  98   0   6   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0 |   e = VIETNAMESE
+   0   0   4   0   0  85   1   1   0   2   0   2   0  11   0   2   1   4   6   1   4  18   4   0   0   2  10 |   f = NORWEGIAN
+   0   0   9   0   5   2 155   1   0   3   6   1   0   4   1   0   0   1   0   8   4   1   1   0   0   0   5 |   g = CZECH
+   0   4   0   1   0   0   0  59   0   5   2   7   0   3   6   0   2   7   3   3   2   4   8   0   1   0   7 |   h = AFRIKAANS
+   0   0   0  35   0   0   0   0 158   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   8   0   1 |   i = RUSSIAN
+   3   2   5   0   0   8   4   7   1  22   2   8   0   5   3   3   3   2   3   6   4   2   5   0   0   0  14 |   j = WELSH
+   0   1   1   0   0   1   4   0   0   1  91   4   1   6   1   4   3   3   0  63   2   4   3   0   0   1   6 |   k = GAELIC
+   0   1  11   0   1   5   3   3   0   2   2 179   1   6   2   1   5   5   3   6   3   8   6   0   0   1   6 |   l = ESPERANTO
+   0   0   4   0   0   0   0   1   0   0   0   2 228   1   0   0   0   0   0   1   1   1   0  10   0   0   0 |   m = ARABIC
+   1   0   0   0   0   7   2   1   0   2  13   9   1 169   4   1   6   2   3  24   3   0   4   0   0   0   0 |   n = FRENCH
+   0   5   7   1   0   3   1   6   0   2   3   4   0   1  35   1   1   4   7   2   2   2   2   0   0   0  15 |   o = SWAHILI
+   0   0   1   0   0   1   0   2   0   1   2   4   0   1   5   7   1   2   8   2   3   1   3   0   0   0   5 |   p = TAGALOG
+   2   0   5   0   0   0   1   1   0   4   9   4   0  13   1   0  79   0   4  16   3   0   0   0   0   0   6 |   q = PORTUGUESE
+   1   2   5   0   1   2   3   6   0   2   1   5   0   6   4   0   2 208   3   2   5   3  17   0   0   1   8 |   r = FINNISH
+   1   3   5   0   0   6   0   4   0   1   2   5   0   3   4   2   0   6  98   6   2   3   6   0   0   0  21 |   s = ITALIAN
+   1   2   5   0   0   2   3   2   0   1  57   5   0  17   6   1   6   0   6 128   6   2   1   0   0   0   7 |   t = SPANISH
+   0   0   5   1   2   3   4   1   0   4   5   7   0   6   3   1   0   4   2   2 126   3   7   0   1   0  12 |   u = POLISH
+   1   1   6   1   0  24   5   2   0   1   1   7   0   3   3   1   0   4   3   4   4  30   6   0   0   6  15 |   v = DANISH
+   0   4   4   1   0   6   4   4   0   2   0   8   1   9   4   1   1  23  10   0   4   5 174   0   0   5  11 |   w = GERMAN
+   0   0   0   0   0   0   0   0   0   0   0   0  22   0   0   0   0   0   0   0   0   0   0  80   0   0   0 |   x = KURDISH
+   0   0   8  39   0   1   0   1   3   0   1   0   0   0   0   0   0   0   1   0   0   0   1   0  55   0   0 |   y = SERBIAN
+   0   0   1   0   0   3   0   0   0   0   0   1   1   1   0   0   0   0   0   0   3   5   7   0   0  60   1 |   z = SWEDISH
+   2   1   4   0   0   8   3   3   1   5   4   7   0   0   6   1   4   4  14   7   8  10  10   0   0   0 117 |  aa = ENGLISH
+
